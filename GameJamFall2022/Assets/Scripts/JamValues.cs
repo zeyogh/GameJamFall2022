@@ -66,7 +66,7 @@ public class JamValues : MonoBehaviour
 
     public void printJam()
     {
-        string jam = "";
+        string jam = jamValues[0] + "";
         if (jamValues[0] == 0) { jam += "apple"; }
         else if (jamValues[0] == 1) { jam += "strawberry"; }
         else if (jamValues[0] == 2) { jam += "blueberry"; }
