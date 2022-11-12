@@ -8,13 +8,14 @@ public class JamValues : MonoBehaviour
     /*
      * [Fruit, Cut, Sugar, Mix]
      */
-    private static int[] jamValues;
+    private static int[] jamValues = new int[3] { -1, -1, -1 };
 
 
-    void Awake()
-    {
-        jamValues = new int[3] { -1, -1, -1};
-    }
+
+    //void Awake()
+    //{
+    //    jamValues = new int[3] { -1, -1, -1};
+    //}
 
     /*
      * 0 = apple, 1 = strawberry, 2 = blueberry, 3 = mystery meat
@@ -54,31 +55,32 @@ public class JamValues : MonoBehaviour
 
     public bool equals(int[] customerPreference)
     {
-        for (int i = 0; i < jamValues.Length; i++)
+        if (jamValues[0] != customerPreference[0] || jamValues[2] != customerPreference[2])
         {
-            if (jamValues[i] != customerPreference[i])
-            {
-                return false;
-            }
+            return false;
         }
-        return true;
+
+        if (customerPreference[1] == 0 && (jamValues[1] == 0 || jamValues[1] == 1))
+        {
+            return true;
+        }
+
+        if (customerPreference[1] == 2 && (jamValues[1] == 2 || jamValues[1] == 3))
+        {
+            return true;
+        }
+
+        if (customerPreference[1] == 4 && jamValues[1] >= 4)
+        {
+            return true;
+        }
+
+        return false;
     }
 
     public void printJam()
     {
-        string jam = jamValues[0] + "";
-        if (jamValues[0] == 0) { jam += "apple"; }
-        else if (jamValues[0] == 1) { jam += "strawberry"; }
-        else if (jamValues[0] == 2) { jam += "blueberry"; }
-        else { jam += "MM"; }
-
-        if (jamValues[1] == 0 || jamValues[1] == 1) { jam += "whole"; }
-        else if (jamValues[1] == 2 || jamValues[1] == 3) { jam += "cut"; }
-        else if (jamValues[1] >= 4) { jam += "crushed"; }
-
-        if (jamValues[2] == 0) { jam += "low"; }
-        else if (jamValues[1] == 1) { jam += "mid"; }
-        else if (jamValues[1] >= 2) { jam += "high"; }
+        string jam = jamValues[0] + " " + jamValues[1] + " " + jamValues[2];
 
         Debug.Log(jam);
     }
