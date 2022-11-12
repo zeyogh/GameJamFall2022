@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
-  m_Name: CrowJamPos
+  m_Name: crow_a_1
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: e3e3ac232a7be2f4dbe63ceb3fd844b9, type: 2}
   sentences:
-  - "*Sniff sniff* You\u2019ve got a talent for this! I see why Mr. Raccoon hired
-    you."
-  nextDialogue: {fileID: 11400000, guid: b2fdf8a21647f9444a05ec31725ae5d4, type: 2}
+  - "How\u2019d you two meet anyway?"
+  nextDialogue: {fileID: 11400000, guid: 73cf8a0d685123a4a9736d62f00c4f17, type: 2}
