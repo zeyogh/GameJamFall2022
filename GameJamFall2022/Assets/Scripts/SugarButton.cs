@@ -23,11 +23,11 @@ public class SugarButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void addPour()
     {
-        if (pour <= 3f)
+        if (pour <= 2f)
         {
             pourButton.GetComponent<JamValues>().updateSugar(0);
         }
-        else if (pour <= 6f)
+        else if (pour <= 4f)
         {
             pourButton.GetComponent<JamValues>().updateSugar(1);
         }
