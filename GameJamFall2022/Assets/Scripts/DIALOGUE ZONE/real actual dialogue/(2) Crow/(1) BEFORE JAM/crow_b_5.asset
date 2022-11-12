@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
+  m_Name: crow_b_5
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: e3e3ac232a7be2f4dbe63ceb3fd844b9, type: 2}
+  sentences:
+  - "Reminds me of when I was a wee little chick in the nest. This place was brand-spanking
+    new back then, and my folks told me it\u2019d last a week at most, kakaka! "
+  - I mean, come on, a jam business in THIS economy? Bah!
+  - "And I\u2019m not a gossip or anything, but I swear that raccoon hasn\u2019t
+    aged a day! Lucky sonuva gun!"
+  nextDialogue: {fileID: 11400000, guid: 0fc1905ade00afb469bdaf1659c24fb9, type: 2}
