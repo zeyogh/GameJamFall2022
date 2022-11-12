@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Kitchen.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Kitchen.unity
+    guid: 8ce34e502841e5f46b8cca85e407f128
+  - enabled: 1
+    path: Assets/Scenes/FridgeInside.unity
+    guid: 3c6a1c5d59797d64ca9b304ac723583d
   m_configObjects: {}
