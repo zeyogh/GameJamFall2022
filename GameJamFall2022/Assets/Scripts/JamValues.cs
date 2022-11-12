@@ -64,4 +64,23 @@ public class JamValues : MonoBehaviour
         return true;
     }
 
+    public void printJam()
+    {
+        string jam = "";
+        if (jamValues[0] == 0) { jam += "apple"; }
+        else if (jamValues[0] == 1) { jam += "strawberry"; }
+        else if (jamValues[0] == 2) { jam += "blueberry"; }
+        else { jam += "MM"; }
+
+        if (jamValues[1] == 0 || jamValues[1] == 1) { jam += "whole"; }
+        else if (jamValues[1] == 2 || jamValues[1] == 3) { jam += "cut"; }
+        else if (jamValues[1] >= 4) { jam += "crushed"; }
+
+        if (jamValues[2] == 0) { jam += "low"; }
+        else if (jamValues[1] == 1) { jam += "mid"; }
+        else if (jamValues[1] >= 2) { jam += "high"; }
+
+        Debug.Log(jam);
+    }
+
 }
