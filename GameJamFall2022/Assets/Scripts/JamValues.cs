@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class JamValues : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class JamValues : MonoBehaviour
      * [Fruit, Cut, Sugar, Mix]
      */
     private static int[] jamValues;
+
 
     void Awake()
     {
@@ -31,14 +33,23 @@ public class JamValues : MonoBehaviour
         jamValues[1] = cut;
     }
 
+    /*
+     * 0 = low, 1 = mid, 2 = high
+     */
     public void updateSugar(int sugar)
     {
         jamValues[2] = sugar;
     }
 
+    public int getSugar()
+    {
+        return jamValues[2];
+    }
+
     public void cut()
     {
         jamValues[1]++;
+        Debug.Log(jamValues.ToString() + jamValues[1]);
     }
 
 }
