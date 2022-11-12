@@ -8,7 +8,7 @@ public class JamValues : MonoBehaviour
     /*
      * [Fruit, Cut, Sugar, Mix]
      */
-    private static int[] jamValues = new int[3] { -1, -1, -1 };
+    private static int[] jamValues = new int[3] { -1, 0, -1 };
 
 
 
@@ -50,7 +50,7 @@ public class JamValues : MonoBehaviour
     public void cut()
     {
         jamValues[1]++;
-        Debug.Log(jamValues.ToString() + jamValues[1]);
+        Debug.Log(jamValues[1]);
     }
 
     public bool equals(int[] customerPreference)
