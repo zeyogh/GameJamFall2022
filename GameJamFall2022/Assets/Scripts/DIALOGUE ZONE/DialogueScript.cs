@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DialogueScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    // TextMesh;
+    TextMeshProUGUI text;
 
-    // Update is called once per frame
-    void Update()
+    public void displayText(DialogueSO dialogueSO)
     {
-        
+        text.text = dialogueSO.dialogueStrings[0];
     }
 }

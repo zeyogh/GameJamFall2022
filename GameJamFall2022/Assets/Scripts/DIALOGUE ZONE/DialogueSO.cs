@@ -7,7 +7,7 @@ using UnityEngine;
 public class DialogueSO : ScriptableObject
 {
     [SerializeField]
-    List<string> dialogueStrings;
+    public List<string> dialogueStrings;
 
 
 }
