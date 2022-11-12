@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66f7278de064f34e89911a2c7c3e6df, type: 3}
+  m_Name: Raccoon
+  m_EditorClassIdentifier: 
+  jamPreference: 000000000000000000000000
+  NPCName: Raccoon
+  NPCSprite: {fileID: 0}
+  positiveResponse: {fileID: 11400000, guid: aa068f4979fa23646abd91a17a8cc775, type: 2}
+  negativeResponse: {fileID: 11400000, guid: eaa050945a70bc34b9e8f6d31cb41475, type: 2}

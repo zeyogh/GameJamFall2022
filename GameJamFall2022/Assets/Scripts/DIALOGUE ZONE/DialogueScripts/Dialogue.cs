@@ -6,8 +6,15 @@ using UnityEngine;
 [System.Serializable]
 public class Dialogue : ScriptableObject
 {
+    public Dialogue(CharacterSO character, string[] sentences, Dialogue nextDialogue)
+    {
+        this.character = character;
+        this.sentences = sentences;
+        this.nextDialogue = nextDialogue;
+    }
+
      
-    public string NPCName;
+    public CharacterSO character;
     [TextArea(3, 10)]
     public string[] sentences;
     public Dialogue nextDialogue;

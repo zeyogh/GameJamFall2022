@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialoguePanel;
     public GameObject continueButton;
     private Queue<string> sentences;
+    private Dialogue currDialogue;
 
 
     private void Start()
@@ -22,13 +23,13 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         //  Debug.Log("Starting conversation with " + dialogue.NPCName);
-
+        currDialogue = dialogue;
         dialoguePanel.SetActive(true);
         continueButton.SetActive(true);
         sentences.Clear();
-        nameText.text = dialogue.NPCName;
+        nameText.text = currDialogue.character.NPCName;
 
-        foreach (string sentence in dialogue.sentences)
+        foreach (string sentence in currDialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
@@ -51,9 +52,15 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-   //     Debug.Log("End of conversation");
-        dialoguePanel.SetActive(false);
-        continueButton.SetActive(false);
-
+        if (currDialogue.nextDialogue == null)
+        {
+            dialoguePanel.SetActive(false);
+            continueButton.SetActive(false);
+        }
+        else
+        {
+            StartDialogue(currDialogue.nextDialogue);
+        }
+       
     }
 }
