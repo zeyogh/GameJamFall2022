@@ -18,6 +18,10 @@ public class Mixing : MonoBehaviour
     [SerializeField] GameObject jamValues;
     [SerializeField] GameObject finishedButton;
 
+    [SerializeField] Image image;
+    [SerializeField] Sprite origSprite;
+    [SerializeField] Sprite flippedSprite;
+
     // Update is called once per frame
     void Update()
     {
@@ -27,35 +31,39 @@ public class Mixing : MonoBehaviour
             {
                 startPos = Input.mousePosition.x;
                 lastPos = Input.mousePosition.y;
-                Debug.Log("Starting pos: " + startPos);
+                //Debug.Log("Starting pos: " + startPos);
             }
             wasHeld = true;
 
             if (direction == 'n' && Input.mousePosition.x > startPos)
             {
                 direction = 'r';
-                Debug.Log("going right");
+                image.sprite = flippedSprite;
+                //Debug.Log("going right");
             }
             else if (direction == 'n' && Input.mousePosition.x < startPos)
             {
                 direction = 'l';
-                Debug.Log("going left");
+                image.sprite = origSprite;
+                //Debug.Log("going left");
             }
             //changing to left direction
             if (direction == 'r' && Input.mousePosition.x < lastPos)
             {
                 direction = 'l';
                 mixDist += Mathf.Abs(startPos - Input.mousePosition.x);
-                Debug.Log("right -> left MixDist: " + mixDist + " Current: " + startPos + " MS: " + Input.mousePosition.x);
+                //Debug.Log("right -> left MixDist: " + mixDist + " Current: " + startPos + " MS: " + Input.mousePosition.x);
                 startPos = Input.mousePosition.x;
+                image.sprite = origSprite;
             }
             //changing to right direction
             else if (direction == 'l' && Input.mousePosition.x > lastPos)
             {
                 direction = 'r';
                 mixDist += Mathf.Abs(startPos - Input.mousePosition.x);
-                Debug.Log("left -> right MixDist: " + mixDist + " Current: " + startPos + " MS: " + Input.mousePosition.x);
+                //Debug.Log("left -> right MixDist: " + mixDist + " Current: " + startPos + " MS: " + Input.mousePosition.x);
                 startPos = Input.mousePosition.x;
+                image.sprite = flippedSprite;
             }
             lastPos = Input.mousePosition.x;
         }
@@ -65,7 +73,7 @@ public class Mixing : MonoBehaviour
             mixDist += Mathf.Abs(startPos - Input.mousePosition.x);
             startPos = Input.mousePosition.x;
             direction = 'n';
-            Debug.Log("Stopped holding val: " + mixDist + " startPos: " + Input.mousePosition.x);
+            //Debug.Log("Stopped holding val: " + mixDist + " startPos: " + Input.mousePosition.x);
             if (mixDist >= 10000f)
             {
                 finishedButton.SetActive(true);
