@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
-  m_Name: frog_pos_3
+  m_Name: coyote_pos_3
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 9ef065591779bfe43b11a7cedc978f6f, type: 2}
+  character: {fileID: 11400000, guid: ac7c71ccd2199484bbc9c736c3872847, type: 2}
   sentences:
-  - If you say so.
-  nextDialogue: {fileID: 11400000, guid: a1d7fd6b7780d7740b3edc4e1eae6e71, type: 2}
+  - "This is really ironic is all. Though I guess if your boss hasn\u2019t made things
+    clear for you, it\u2019s not my place to."
+  - Ignorance is bliss, after all.
+  nextDialogue: {fileID: 11400000, guid: e6f6c67d4862f5c41bc2583ec8320828, type: 2}

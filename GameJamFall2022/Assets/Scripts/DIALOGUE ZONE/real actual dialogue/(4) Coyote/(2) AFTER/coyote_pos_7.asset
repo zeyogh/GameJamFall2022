@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
+  m_Name: coyote_pos_7
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  sentences:
+  - "Eh, might as well not keep it a secret. The mutations\u2019ve been biting at
+    me for a while now. Today or tomorrow, I don\u2019t know, but I don\u2019t have
+    a lot of days left."
+  - "I always liked this place though. For more reasons than one. So I\u2019m glad
+    I could make it here one last time."
+  - "Send my regards to your boss. You\u2019re not half-bad, kid."
+  nextDialogue: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Coyote
   m_EditorClassIdentifier: 
   jamPreference: 000000000000000000000000
-  NPCName: 
+  NPCName: Coyote
   NPCSprite: {fileID: 0}
-  positiveResponse: {fileID: 0}
-  negativeResponse: {fileID: 0}
+  positiveResponse: {fileID: 11400000, guid: d4fea48f73131644296598a2200ccab9, type: 2}
+  negativeResponse: {fileID: 11400000, guid: 5c109f2ba5a57cd47835412e659006b7, type: 2}

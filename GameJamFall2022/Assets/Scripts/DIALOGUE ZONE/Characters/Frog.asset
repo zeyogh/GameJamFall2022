@@ -15,5 +15,5 @@ MonoBehaviour:
   jamPreference: 000000000000000000000000
   NPCName: Frog
   NPCSprite: {fileID: 0}
-  positiveResponse: {fileID: 0}
-  negativeResponse: {fileID: 0}
+  positiveResponse: {fileID: 11400000, guid: 9fbaf60fa360d9f44baeb7e55d02046a, type: 2}
+  negativeResponse: {fileID: 11400000, guid: 3ff11d23be3508a4a8d2b22ce6d7c887, type: 2}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class DialogueTrigger : MonoBehaviour
 
         if (!jamMatches && character.name == "Coyote")
         {
-            //      FindObjectOfType<SceneChanger>().changeScenes()
+            SceneManager.LoadScene("CoyoteGameOver");
         }
     }
 }

@@ -15,4 +15,4 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: 9ef065591779bfe43b11a7cedc978f6f, type: 2}
   sentences:
   - Oh. Okay.
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: a1d7fd6b7780d7740b3edc4e1eae6e71, type: 2}

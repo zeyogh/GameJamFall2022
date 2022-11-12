@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
   m_Name: frog_b_ 8
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
+  character: {fileID: 11400000, guid: 9058bf22fbc6a71468f94b1dcc660175, type: 2}
   sentences:
   - "I\u2019ll be right on it."
   nextDialogue: {fileID: 0}
