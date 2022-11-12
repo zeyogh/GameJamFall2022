@@ -24,5 +24,10 @@ public class DialogueTrigger : MonoBehaviour
         }
 
         TriggerDialogue();
+
+        if (!jamMatches && character.name == "Coyote")
+        {
+            //      FindObjectOfType<SceneChanger>().changeScenes()
+        }
     }
 }
