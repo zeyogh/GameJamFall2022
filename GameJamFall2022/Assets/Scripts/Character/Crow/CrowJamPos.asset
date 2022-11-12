@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
-  m_Name: TestDialogue1
+  m_Name: CrowJamPos
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 81cd727a0e9e7f948b5e96029287fd16, type: 2}
+  character: {fileID: 11400000, guid: e3e3ac232a7be2f4dbe63ceb3fd844b9, type: 2}
   sentences:
-  - This is test dialogue!
-  - Watch me dialogue!!!
-  - This is so cool!!!!!!!!!!!!!!!!
-  nextDialogue: {fileID: 11400000, guid: 9cceb987f3e4351469a3f995bbe74415, type: 2}
+  - "*Sniff sniff* You\u2019ve got a talent for this! I see why Mr. Raccoon hired
+    you."
+  nextDialogue: {fileID: 0}

@@ -10,4 +10,19 @@ public class DialogueTrigger : MonoBehaviour
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
+
+    public void TriggerJamResponse(CharacterSO character)
+    {
+        bool jamMatches = FindObjectOfType<JamValues>().equals(character.jamPreference);
+        
+        if (jamMatches)
+        {
+            dialogue = character.positiveResponse;
+        } else
+        {
+            dialogue = character.negativeResponse;
+        }
+
+        TriggerDialogue();
+    }
 }
