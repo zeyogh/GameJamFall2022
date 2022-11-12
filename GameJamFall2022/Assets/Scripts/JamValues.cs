@@ -52,4 +52,16 @@ public class JamValues : MonoBehaviour
         Debug.Log(jamValues.ToString() + jamValues[1]);
     }
 
+    public bool equals(int[] customerPreference)
+    {
+        for (int i = 0; i < jamValues.Length; i++)
+        {
+            if (jamValues[i] != customerPreference[i])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }

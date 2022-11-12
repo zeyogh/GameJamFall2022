@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mixer.unity
     guid: 91f32ed9ca78c594e8d6a0d32eadf329
+  - enabled: 1
+    path: Assets/Scenes/Result.unity
+    guid: f47ea964aa250c5479e071009dd05545
   m_configObjects: {}

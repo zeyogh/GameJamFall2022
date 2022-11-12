@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8873812797857834668}
   - component: {fileID: 6147799039773430190}
+  - component: {fileID: 6184793729393145575}
   m_Layer: 0
   m_Name: JamValues
   m_TagString: Untagged
@@ -42,5 +43,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b15f3e6a750f95347ad4c696a41ee801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6184793729393145575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7023740632603717098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55994755fb015145b19bb3d2527cc3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
