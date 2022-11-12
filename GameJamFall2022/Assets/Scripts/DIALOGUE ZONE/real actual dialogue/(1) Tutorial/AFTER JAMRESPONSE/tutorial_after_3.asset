@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
-  m_Name: RacoonJamNeg
+  m_Name: tutorial_after_3
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 752715cfdbe9bda41a5324ae4cf20f62, type: 2}
   sentences:
-  - "Huh\u2026maybe get your hearing checked. You\u2019d better have a better performance
-    when I put you to work."
-  nextDialogue: {fileID: 11400000, guid: 2a2f3d9610cfa914b9ea7d8a3f4824e9, type: 2}
+  - "Hehehehe\u2026nothin\u2019 at all. Don\u2019t worry about it. Now get to work!"
+  nextDialogue: {fileID: 11400000, guid: f7f2e0bba4405e0499bfe39caf56c646, type: 2}

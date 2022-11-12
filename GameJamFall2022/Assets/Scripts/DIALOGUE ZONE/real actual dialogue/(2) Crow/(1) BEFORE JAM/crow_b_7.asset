@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
-  m_Name: CrowJamPos
+  m_Name: crow_b_7
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: e3e3ac232a7be2f4dbe63ceb3fd844b9, type: 2}
   sentences:
-  - "*Sniff sniff* You\u2019ve got a talent for this! I see why Mr. Raccoon hired
-    you."
-  nextDialogue: {fileID: 11400000, guid: b2fdf8a21647f9444a05ec31725ae5d4, type: 2}
+  - "Not that I\u2019m saying I\u2019m jealous or anything, definitely not. I\u2019m
+    a successful business owner myself, y\u2019know. I run the saloon north of here."
+  - "Haven\u2019t seen you around these parts, you should swing by. Where\u2019d
+    you come from anyway? You can tell me, I\u2019m not a gossip, except when I am,
+    kakakaka!"
+  nextDialogue: {fileID: 11400000, guid: 9bc36a739b518d7409023ed696394c14, type: 2}

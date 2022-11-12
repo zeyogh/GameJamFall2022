@@ -17,4 +17,4 @@ MonoBehaviour:
   - "Wow, I took pity and gave you the most vanilla, basic possible request, and
     you still managed to screw it up. I\u2019m honestly impressed. The hell was that
     old raccoon thinking?"
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: b2fdf8a21647f9444a05ec31725ae5d4, type: 2}
