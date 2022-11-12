@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
-  m_Name: DialogueTest
+  m_Name: TestDialogue1
   m_EditorClassIdentifier: 
-  dialogueStrings:
-  - Helllllo
-  - this is dialogue
-  - watch me dialogue
-  - mwa ha ha ha ha
+  NPCName: Alix
+  sentences:
+  - This is test dialogue!
+  - Watch me dialogue!!!
+  - This is so cool!!!!!!!!!!!!!!!!
+  nextDialogue: {fileID: 11400000, guid: 9cceb987f3e4351469a3f995bbe74415, type: 2}
