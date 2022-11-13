@@ -11,6 +11,8 @@ public class SugarButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private float pour = 0f;
     private float startTime = 0f;
 
+    [SerializeField] GameObject sugar;
+
     public void OnPointerDown(PointerEventData eventData)
     {
         startTime = Time.time;
@@ -30,10 +32,13 @@ public class SugarButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         else if (pour <= 4f)
         {
             pourButton.GetComponent<JamValues>().updateSugar(1);
+            sugar.SetActive(true);
         }
         else
         {
             pourButton.GetComponent<JamValues>().updateSugar(2);
+            sugar.SetActive(true);
+            sugar.transform.position += (new Vector3(0, 15));
         }
         Debug.Log(pour);
         Debug.Log(pourButton.GetComponent<JamValues>().getSugar());
