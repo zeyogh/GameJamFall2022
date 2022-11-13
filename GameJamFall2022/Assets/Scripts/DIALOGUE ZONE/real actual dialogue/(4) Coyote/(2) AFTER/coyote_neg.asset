@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
+  m_Name: coyote_neg
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: ac7c71ccd2199484bbc9c736c3872847, type: 2}
+  sentences:
+  - "Give a man a fish, he\u2019s fed for a day. Give a man a rod and he\u2019s fed
+    for life."
+  - "But right now I just see a fish, so I\u2019ll have to make do with a day\u2019s
+    meal."
+  - I told you not to mess this up.
+  nextDialogue: {fileID: 11400000, guid: 9e51b3957ea32754fa9fa5eed328f85d, type: 2}

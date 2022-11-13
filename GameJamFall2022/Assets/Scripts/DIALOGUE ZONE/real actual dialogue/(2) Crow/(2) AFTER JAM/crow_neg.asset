@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
-  m_Name: crow_a_3
+  m_Name: crow_neg
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: e3e3ac232a7be2f4dbe63ceb3fd844b9, type: 2}
   sentences:
-  - "Damn right you do! You look like you could eat me for dinner! Can\u2019t imagine
-    what it would take to feed you\u2026"
-  - Nevermind, keep up the work, my guy!
-  nextDialogue: {fileID: 11400000, guid: 710bd982b22bce046b4daf38b625673d, type: 2}
+  - "Wow, I took pity and gave you the most vanilla, basic possible request, and
+    you still managed to screw it up. I\u2019m honestly impressed. The hell was that
+    old raccoon thinking?"
+  nextDialogue: {fileID: 11400000, guid: b2fdf8a21647f9444a05ec31725ae5d4, type: 2}
