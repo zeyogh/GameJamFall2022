@@ -121,6 +121,11 @@ public class JamValues : MonoBehaviour
         return jamValues[0];
     }
 
+    public int getCut()
+    {
+        return jamValues[1];
+    }
+
     public void cut()
     {
         jamValues[1]++;
@@ -158,13 +163,11 @@ public class JamValues : MonoBehaviour
 
         if (speaker.Equals("raccoon"))
         {
-            Debug.Log("raccoon maaaaan");
             return raccoonTest();
         }
 
         if (jamValues[0] != customerPreference[0] || jamValues[2] != customerPreference[2])
         {
-            Debug.Log("1 or 3 incorrect!");
             return false;
         }
 
@@ -172,30 +175,16 @@ public class JamValues : MonoBehaviour
         {
             return true;
         }
-        else
-        {
-            Debug.Log("first didn't work");
-        }
 
         if (customerPreference[1] == 2 && (jamValues[1] == 2 || jamValues[1] == 3))
         {
             return true;
-        }
-        else
-        {
-            Debug.Log("second didn't work");
         }
 
         if (customerPreference[1] == 4 && jamValues[1] >= 4)
         {
             return true;
         }
-        else
-        {
-            Debug.Log("third didn't work");
-        }
-
-        Debug.Log("fell here!");
         return false;
     }
 

@@ -46,4 +46,59 @@ public class CuttingSpriteSwitch : MonoBehaviour
 
     }
 
+    public void checkCut()
+    {
+        int cut = jamValues.GetComponent<JamValues>().getCut();
+
+        if (cut == 2 || cut == 3)
+        {
+            cutFood();
+        }
+
+        else if (cut >= 4)
+        {
+            crushedFood();
+        }
+    }
+
+    private void cutFood()
+    {
+        if (image.sprite == appleWhole)
+        {
+            image.sprite = appleCut;
+        }
+        else if (image.sprite == strawberryWhole)
+        {
+            image.sprite = strawberryCut;
+        }
+        else if (image.sprite == blueberryWhole)
+        {
+            image.sprite = blueberryCut;
+        }
+        else if (image.sprite == meatWhole)
+        {
+            image.sprite = meatCut;
+        }
+    }
+
+    private void crushedFood()
+    {
+        if (image.sprite == appleCut)
+        {
+            image.sprite = appleCrushed;
+        }
+        else if (image.sprite == strawberryCut)
+        {
+            image.sprite = strawberryCrushed;
+        }
+        else if (image.sprite == blueberryCut)
+        {
+            image.sprite = blueberryCrushed;
+        }
+        else if (image.sprite == meatCut)
+        {
+            image.sprite = meatCrushed;
+        }
+    }
+
 }
