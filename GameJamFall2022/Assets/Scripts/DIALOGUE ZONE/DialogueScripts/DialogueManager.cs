@@ -50,6 +50,10 @@ public class DialogueManager : MonoBehaviour
             characterSprite.sprite = dialogue.character.NPCSprite;
             characterSprite.gameObject.SetActive(true);
         }
+        else if (dialogue.character.NPCSprite == null && !dialogue.character.name.Equals("You"))
+        {
+            characterSprite.gameObject.SetActive(false);
+        }
         
         dialoguePanel.SetActive(true);
         continueButton.gameObject.SetActive(true);
@@ -82,7 +86,7 @@ public class DialogueManager : MonoBehaviour
         if (currDialogue.nextDialogue == null)
         {
             dialoguePanel.SetActive(false);
-            characterSprite.gameObject.SetActive(false);
+         //   characterSprite.gameObject.SetActive(false);
             continueButton.gameObject.SetActive(false);
             loadNextScene.gameObject.SetActive(true);
         }
