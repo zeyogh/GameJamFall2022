@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class DialogueManager : MonoBehaviour
 {
@@ -22,6 +24,8 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
     private Dialogue currDialogue;
+
+    private static int[] coyoteJamPreference = { 3, 0, 1 };
 
 
     private void Start()
@@ -101,6 +105,16 @@ public class DialogueManager : MonoBehaviour
         {
             StartDialogue(currDialogue.nextDialogue);
         }
-       
+
+        
+
+    }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name.Equals("End") && !FindObjectOfType<JamValues>().equals(coyoteJamPreference))
+        {
+            SceneManager.LoadScene("CoyoteGameOver");
+        }
     }
 }
