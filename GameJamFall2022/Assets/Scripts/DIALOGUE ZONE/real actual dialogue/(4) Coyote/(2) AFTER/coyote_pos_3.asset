@@ -16,5 +16,5 @@ MonoBehaviour:
   sentences:
   - "This is really ironic is all. Though I guess if your boss hasn\u2019t made things
     clear for you, it\u2019s not my place to."
-  - Ignorance is bliss, after all.
+  - Ignorance is bliss.
   nextDialogue: {fileID: 11400000, guid: e6f6c67d4862f5c41bc2583ec8320828, type: 2}

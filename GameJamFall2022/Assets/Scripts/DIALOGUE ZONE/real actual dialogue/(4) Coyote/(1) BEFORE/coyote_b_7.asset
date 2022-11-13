@@ -17,5 +17,4 @@ MonoBehaviour:
   - Oh, and another thing.
   - "This is going to be the last jar I get from this place. I\u2019ll be moving
     onto\u2026greener pastures soon."
-  - "So don\u2019t mess this up, yeah? Give a coyote a break."
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: 8132c518b51778b4f847ea90ff352dcc, type: 2}

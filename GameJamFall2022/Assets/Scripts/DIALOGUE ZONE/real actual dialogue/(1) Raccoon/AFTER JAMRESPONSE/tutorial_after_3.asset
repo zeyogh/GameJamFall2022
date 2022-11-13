@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 752715cfdbe9bda41a5324ae4cf20f62, type: 2}
   sentences:
-  - "Hehehehe\u2026nothin\u2019 at all. Don\u2019t worry about it. Now get to work!"
+  - "Hehehehe, that\u2019s what I like to hear. You catch on quick. Now get back
+    to work!"
   nextDialogue: {fileID: 11400000, guid: 278bd1095707d11469b7d108f4cd10a7, type: 2}

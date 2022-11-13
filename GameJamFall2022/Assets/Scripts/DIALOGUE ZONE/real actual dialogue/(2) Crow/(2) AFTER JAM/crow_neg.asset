@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: e3e3ac232a7be2f4dbe63ceb3fd844b9, type: 2}
   sentences:
-  - "Wow, I took pity and gave you the most vanilla, basic possible request, and
-    you still managed to screw it up. I\u2019m honestly impressed. The hell was that
-    old raccoon thinking?"
-  nextDialogue: {fileID: 11400000, guid: b2fdf8a21647f9444a05ec31725ae5d4, type: 2}
+  - "Wow, I took pity and gave you the most plain, vanilla request possible and you
+    still managed to screw it up. I\u2019m honestly impressed."
+  nextDialogue: {fileID: 11400000, guid: cd164e9e720dc404bae7bc70ef0bdea3, type: 2}

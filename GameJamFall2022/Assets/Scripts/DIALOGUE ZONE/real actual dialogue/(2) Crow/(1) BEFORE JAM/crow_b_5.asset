@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: e3e3ac232a7be2f4dbe63ceb3fd844b9, type: 2}
   sentences:
-  - "Reminds me of when I was a wee little chick in the nest. This place was brand-spanking
-    new back then, and my folks told me it\u2019d last a week at most, kakaka! "
-  - I mean, come on, a jam business in THIS economy? Bah!
-  - "And I\u2019m not a gossip or anything, but I swear that raccoon hasn\u2019t
-    aged a day! Lucky sonuva gun!"
+  - "Reminds me of when I was a wee bird barely out of the nest. This place was brand-spanking
+    new way back when. I said it wouldn\u2019t be a week before the whole thing shut
+    down, kakaka!"
+  - I mean, come on, a jammery in THIS economy? Bah!
+  - "But apparently a lotta folks have a hankering for jams and jammeries. That lucky
+    sonuva gun! If only I\u2019d beaten him to it. "
   nextDialogue: {fileID: 11400000, guid: 0fc1905ade00afb469bdaf1659c24fb9, type: 2}

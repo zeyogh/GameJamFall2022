@@ -16,5 +16,6 @@ MonoBehaviour:
   sentences:
   - "Damn right you do! You look like you could eat me for dinner! Can\u2019t imagine
     what it would take to feed you\u2026"
-  - Nevermind, keep up the work, my guy!
+  - Nevermind, keep up the work, my guy! And swing by my place sometime, I always
+    appreciate a new customer.
   nextDialogue: {fileID: 11400000, guid: e3fa170a3a98ad8469456a688c727e83, type: 2}

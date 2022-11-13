@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 752715cfdbe9bda41a5324ae4cf20f62, type: 2}
   sentences:
-  - So you wanna learn how to jam at my jammery?
+  - "Alright, kid, I\u2019m not a charity case here, so it\u2019s time for you to
+    earn your keep."
   - "I\u2019m a believer in hands-on approaches, so grab an apron and get cookin\u2019!"
   - "I\u2019m really in the mood for some apple jam! Give it a try!"
   nextDialogue: {fileID: 0}

@@ -15,6 +15,6 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: 9ef065591779bfe43b11a7cedc978f6f, type: 2}
   sentences:
   - "It doesn\u2019t matter much either way."
-  - With a job like mine, even little things like getting fresh jam ought to make
-    you happy. So thanks.
+  - "When you\u2019re in the bounty hunting business, even little things like getting
+    fresh jam ought to make you happy. So thanks."
   nextDialogue: {fileID: 11400000, guid: 5c8fc4f5488835245a29a655c6ce9bd4, type: 2}
