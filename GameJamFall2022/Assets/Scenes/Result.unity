@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 224499368}
   - component: {fileID: 224499367}
   - component: {fileID: 224499366}
-  - component: {fileID: 224499365}
+  - component: {fileID: 224499369}
   m_Layer: 5
   m_Name: Counter
   m_TagString: Untagged
@@ -164,18 +164,6 @@ RectTransform:
   m_AnchoredPosition: {x: 564, y: -284}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &224499365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224499363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 290e4eebe2d27714b97fc2f30c6f700e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &224499366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,16 +208,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 224499365}
-        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: changeScenes
-        m_Mode: 5
+      - m_Target: {fileID: 224499369}
+        m_TargetAssemblyTypeName: CounterTransfer, Assembly-CSharp
+        m_MethodName: activate
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Counter
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &224499367
@@ -270,6 +258,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224499363}
   m_CullTransparentMesh: 1
+--- !u!114 &224499369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224499363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 022e3504a51c98047991278272df3b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &731873125
 GameObject:
   m_ObjectHideFlags: 0
