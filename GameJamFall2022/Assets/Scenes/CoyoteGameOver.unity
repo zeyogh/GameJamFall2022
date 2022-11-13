@@ -1040,9 +1040,9 @@ MonoBehaviour:
   nameText: {fileID: 1120422783}
   dialogueText: {fileID: 597471604}
   dialoguePanel: {fileID: 331149833}
-  characterSprite: {fileID: 0}
-  continueButton: {fileID: 1737127043}
-  dialogueButton: {fileID: 0}
+  characterSprite: {fileID: 1808748610}
+  continueButton: {fileID: 1737127045}
+  dialogueButton: {fileID: 189619972}
   loadNextScene: {fileID: 0}
   startConversation: []
   characters: []
