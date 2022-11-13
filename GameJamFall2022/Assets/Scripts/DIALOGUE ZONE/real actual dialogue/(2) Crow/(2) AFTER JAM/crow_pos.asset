@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: e3e3ac232a7be2f4dbe63ceb3fd844b9, type: 2}
   sentences:
-  - "*Sniff sniff* You\u2019ve got a talent for this! I see why Mr. Raccoon hired
-    you."
+  - "I\u2019m gonna cry! You\u2019ve got a talent for this! I see why Mr. Raccoon
+    hired you."
   nextDialogue: {fileID: 11400000, guid: b2fdf8a21647f9444a05ec31725ae5d4, type: 2}

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 9058bf22fbc6a71468f94b1dcc660175, type: 2}
   sentences:
-  - "That\u2019s very interesting. What would you\u2014"
+  - What???
   nextDialogue: {fileID: 11400000, guid: 2dbcf5685d7fa584a962de55d2282d84, type: 2}
