@@ -5,18 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class CounterTransfer : MonoBehaviour
 {
-    private static string counter = "raccoon";
+    private static string counter = "crow";
 
     public void activate()
     {
         loadScreen(counter);
 
-        if (counter.Equals("raccoon"))
-        {
-            counter = "crow";
-        }
-
-        else if (counter.Equals("crow"))
+        if (counter.Equals("crow"))
         {
             counter = "frog";
         }
