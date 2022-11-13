@@ -10,8 +10,8 @@ public class SwitchSong : MonoBehaviour
 
     public void changeSong()
     {
-    //    AudioSource source = FindObjectOfType<AudioSource>();
-        currAudioSource.clip = nextSong;
+        AudioSource source = FindObjectOfType<AudioSource>();
+        source.clip = nextSong;
     }
 
 
