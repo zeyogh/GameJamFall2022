@@ -38,6 +38,71 @@ public class JamValues : MonoBehaviour
         jamValues[1] = cut;
     }
 
+    public void updateCutSprite(GameObject button)
+    {
+        Image buttonImage = button.GetComponentInChildren<Image>();
+        if (jamValues[0] == 0) //apple
+        {
+            if (jamValues[1] < 2)
+            {
+                
+            }
+            else if (jamValues[1] < 4)
+            {
+                
+            }
+            else
+            {
+
+            }
+        }
+        else if (jamValues[0] == 1) //strawberry
+        {
+            if (jamValues[1] < 2)
+            {
+
+            }
+            else if (jamValues[1] < 4)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+        else if (jamValues[0] == 2) //blueberry
+        {
+            if (jamValues[1] < 2)
+            {
+
+            }
+            else if (jamValues[1] < 4)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+        else if (jamValues[0] == 3) //mystery
+        {
+            if (jamValues[1] < 2)
+            {
+
+            }
+            else if (jamValues[1] < 4)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+    }
+
     /*
      * 0 = low, 1 = mid, 2 = high
      */
