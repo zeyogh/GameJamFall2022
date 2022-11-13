@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e66f7278de064f34e89911a2c7c3e6df, type: 3}
-  m_Name: Coyote Murdered You (
+  m_Name: Blank
   m_EditorClassIdentifier: 
   jamPreference: 000000000000000000000000
-  NPCName: Coyote
+  NPCName: ' '
   NPCSprite: {fileID: 0}
   positiveResponse: {fileID: 0}
   negativeResponse: {fileID: 0}
-  canMurderYou: 1

@@ -814,7 +814,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -856,7 +856,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894549533}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1257,18 +1257,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1500749540}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1555557342}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: hideButton
@@ -1281,13 +1269,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1555557342}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: showButton
-        m_Mode: 2
+      - m_Target: {fileID: 1500749540}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1068297632}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1456,14 +1444,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1684878220}
   continueButton: {fileID: 894549536}
   dialogueButton: {fileID: 1500749537}
-  startConversation:
-  - {fileID: 11400000, guid: 5721c90a121da3e4c96a8261d8f9fa60, type: 2}
-  - {fileID: 11400000, guid: f7f2e0bba4405e0499bfe39caf56c646, type: 2}
-  characters:
-  - {fileID: 11400000, guid: 752715cfdbe9bda41a5324ae4cf20f62, type: 2}
-  - {fileID: 11400000, guid: e3e3ac232a7be2f4dbe63ceb3fd844b9, type: 2}
-  - {fileID: 11400000, guid: 9ef065591779bfe43b11a7cedc978f6f, type: 2}
-  - {fileID: 11400000, guid: ac7c71ccd2199484bbc9c736c3872847, type: 2}
+  loadNextScene: {fileID: 1068297632}
+  startConversation: []
+  characters: []
 --- !u!4 &1555557343
 Transform:
   m_ObjectHideFlags: 0
@@ -1496,7 +1479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1684878221
 RectTransform:
   m_ObjectHideFlags: 0

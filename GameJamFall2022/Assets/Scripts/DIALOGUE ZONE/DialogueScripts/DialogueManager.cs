@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialoguePanel;
     public Button continueButton;
     public Button dialogueButton;
+    public Button loadNextScene;
 
     public Dialogue[] startConversation;
     public CharacterSO[] characters;
@@ -75,6 +76,7 @@ public class DialogueManager : MonoBehaviour
         {
             dialoguePanel.SetActive(false);
             continueButton.gameObject.SetActive(false);
+            loadNextScene.gameObject.SetActive(true);
         }
         else
         {
