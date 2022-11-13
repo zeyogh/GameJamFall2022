@@ -27,6 +27,16 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
+    public void hideButton(Button button)
+    {
+        button.gameObject.SetActive(false);
+    }
+
+    public void showButton(Button button)
+    {
+        button.gameObject.SetActive(true);
+    }
+
 
     public void StartDialogue(Dialogue dialogue)
     {
