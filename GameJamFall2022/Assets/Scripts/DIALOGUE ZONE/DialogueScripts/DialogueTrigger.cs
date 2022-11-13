@@ -22,8 +22,7 @@ public class DialogueTrigger : MonoBehaviour
     public void TriggerJamResponse()
     {
 
-        // bool jamMatches = FindObjectOfType<JamValues>().equals(character.jamPreference);
-        bool jamMatches = true;
+        bool jamMatches = FindObjectOfType<JamValues>().equals(character.jamPreference);
         
         if (jamMatches)
         {

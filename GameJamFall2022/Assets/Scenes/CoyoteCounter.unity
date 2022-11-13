@@ -1259,7 +1259,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1500749540}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
+        m_MethodName: TriggerJamResponse
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1319,8 +1319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b818631adae9b04c84274da1aaa9747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 5721c90a121da3e4c96a8261d8f9fa60, type: 2}
-  character: {fileID: 0}
+  dialogue: {fileID: 0}
+  character: {fileID: 11400000, guid: 9ef065591779bfe43b11a7cedc978f6f, type: 2}
   manager: {fileID: 1555557342}
 --- !u!1 &1553473482
 GameObject:
