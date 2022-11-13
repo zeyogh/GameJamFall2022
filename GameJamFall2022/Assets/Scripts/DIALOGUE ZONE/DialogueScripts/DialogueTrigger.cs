@@ -11,8 +11,6 @@ public class DialogueTrigger : MonoBehaviour
     public CharacterSO character;
     public DialogueManager manager;
 
-    private bool coyoteCounterTrigger = true;
-
 
     public void TriggerDialogue()
     {
