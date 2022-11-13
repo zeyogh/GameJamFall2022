@@ -9,7 +9,29 @@ public class CounterTransfer : MonoBehaviour
 
     public void activate()
     {
-        loadScreen(counter);
+        string speaker = FindObjectOfType<JamValues>().getSpeaker();
+
+        if (speaker.Equals("raccoon"))
+        {
+            counter = "crow";
+        }
+
+        else if (speaker.Equals("crow"))
+        {
+            counter = "frog";
+        }
+
+        else if (speaker.Equals("frog"))
+        {
+            counter = "coyote";
+        }
+
+        else
+        {
+            counter = "end";
+        }
+
+        /*loadScreen(counter);
 
         if (counter.Equals("crow"))
         {
@@ -24,9 +46,10 @@ public class CounterTransfer : MonoBehaviour
         else if (counter.Equals("coyote"))
         {
             counter = "end";
-        }
+        }*/
 
         Debug.Log(counter);
+        loadScreen(counter);
     }
 
     public void loadScreen(string animal)
