@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 
 public class JamValues : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class JamValues : MonoBehaviour
      * [Fruit, Cut, Sugar, Mix]
      */
     private static int[] jamValues = new int[3] { -1, 0, -1 };
+
+    private static string speaker = "raccoon";
 
 
 
@@ -53,8 +57,36 @@ public class JamValues : MonoBehaviour
         Debug.Log(jamValues[1]);
     }
 
+    public void updateSpeaker()
+    {
+        string scene = SceneManager.GetActiveScene().name;
+
+        if (scene.Equals("RaccoonCounter"))
+        {
+            speaker = "raccoon";
+        }
+        else if (scene.Equals("CrowCounter"))
+        {
+            speaker = "crow";
+        }
+        else if (scene.Equals("FrogCounter"))
+        {
+            speaker = "frog";
+        }
+        else if (scene.Equals("CoyoteCounter")) {
+            speaker = "coyote";
+        }
+    }
+
+
     public bool equals(int[] customerPreference)
     {
+
+        if (speaker.Equals("raccoon"))
+        {
+            return raccoonTest();
+        }
+
         if (jamValues[0] != customerPreference[0] || jamValues[2] != customerPreference[2])
         {
             return false;
@@ -75,6 +107,21 @@ public class JamValues : MonoBehaviour
             return true;
         }
 
+        return false;
+    }
+
+    public void refresh()
+    {
+        jamValues[1] = 0;
+        jamValues[2] = -1;
+    }    
+    
+    private bool raccoonTest()
+    {
+        if (jamValues[0] == 0)
+        {
+            return true;
+        }
         return false;
     }
 
