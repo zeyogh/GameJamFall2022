@@ -29,6 +29,13 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
+
+    public string getCurrentSpeaker()
+    {
+        return currDialogue.character.name;
+    }
+
+
     public void hideButton(Button button)
     {
         button.gameObject.SetActive(false);
