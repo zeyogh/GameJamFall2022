@@ -22,6 +22,8 @@ public class Mixing : MonoBehaviour
     [SerializeField] Sprite origSprite;
     [SerializeField] Sprite flippedSprite;
 
+    [SerializeField] AudioSource audio;
+
     // Update is called once per frame
     void Update()
     {
@@ -31,6 +33,7 @@ public class Mixing : MonoBehaviour
             {
                 startPos = Input.mousePosition.x;
                 lastPos = Input.mousePosition.y;
+                audio.Play();
                 //Debug.Log("Starting pos: " + startPos);
             }
             wasHeld = true;
