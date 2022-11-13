@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e66f7278de064f34e89911a2c7c3e6df, type: 3}
-  m_Name: Raccoon
+  m_Name: Blank
   m_EditorClassIdentifier: 
-  jamPreference: 000000000400000002000000
-  NPCName: Raccoon
-  NPCSprite: {fileID: 21300000, guid: 57c7d1e63f2542d4c99ad3d360f0b395, type: 3}
-  positiveResponse: {fileID: 11400000, guid: aa068f4979fa23646abd91a17a8cc775, type: 2}
-  negativeResponse: {fileID: 11400000, guid: eaa050945a70bc34b9e8f6d31cb41475, type: 2}
+  jamPreference: 000000000000000000000000
+  NPCName: ' '
+  NPCSprite: {fileID: 0}
+  positiveResponse: {fileID: 0}
+  negativeResponse: {fileID: 0}

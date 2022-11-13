@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jamPreference: 010000000400000002000000
   NPCName: Crow
-  NPCSprite: {fileID: 0}
+  NPCSprite: {fileID: 21300000, guid: 4d3c74bcbcd1da94cb1addb301e36b9a, type: 3}
   positiveResponse: {fileID: 11400000, guid: dafe742dca30b3c4485f454cbd5b7f11, type: 2}
   negativeResponse: {fileID: 11400000, guid: 0878d798126b66a4396a6c3004a1094c, type: 2}

@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e66f7278de064f34e89911a2c7c3e6df, type: 3}
-  m_Name: Coyote Murdered You (
+  m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
+  m_Name: tutorial_after_4
   m_EditorClassIdentifier: 
-  jamPreference: 000000000000000000000000
-  NPCName: Coyote
-  NPCSprite: {fileID: 0}
-  positiveResponse: {fileID: 0}
-  negativeResponse: {fileID: 0}
-  canMurderYou: 1
+  character: {fileID: 11400000, guid: b98d419cac5ce914cb8b254f4ae4589a, type: 2}
+  sentences:
+  - ...
+  nextDialogue: {fileID: 11400000, guid: f7f2e0bba4405e0499bfe39caf56c646, type: 2}

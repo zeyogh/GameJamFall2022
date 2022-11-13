@@ -51,5 +51,10 @@ public class CounterTransfer : MonoBehaviour
             SceneManager.LoadScene("CoyoteCounter");
         }
 
+        if (animal.Equals("end"))
+        {
+            SceneManager.LoadScene("End");
+        }
+
     }
 }

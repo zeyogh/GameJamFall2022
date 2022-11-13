@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66f7278de064f34e89911a2c7c3e6df, type: 3}
   m_Name: Coyote
   m_EditorClassIdentifier: 
-  jamPreference: 000000000000000000000000
+  jamPreference: 030000000000000001000000
   NPCName: Coyote
   NPCSprite: {fileID: 0}
   positiveResponse: {fileID: 11400000, guid: d4fea48f73131644296598a2200ccab9, type: 2}

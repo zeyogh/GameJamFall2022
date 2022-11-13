@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66f7278de064f34e89911a2c7c3e6df, type: 3}
   m_Name: Frog
   m_EditorClassIdentifier: 
-  jamPreference: 000000000000000000000000
+  jamPreference: 020000000000000000000000
   NPCName: Frog
-  NPCSprite: {fileID: 0}
+  NPCSprite: {fileID: 21300000, guid: b2b53080c31057948b0dde65751611e7, type: 3}
   positiveResponse: {fileID: 11400000, guid: 9fbaf60fa360d9f44baeb7e55d02046a, type: 2}
   negativeResponse: {fileID: 11400000, guid: 3ff11d23be3508a4a8d2b22ce6d7c887, type: 2}
