@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 752715cfdbe9bda41a5324ae4cf20f62, type: 2}
   sentences:
-  - "I\u2019m stickin\u2019 my neck out for you, kid. So let\u2019s not disappoint,
-    yeah?"
+  - "I\u2019m putting a lot on the line for you, kid. In more ways than one. So let\u2019s
+    not disappoint, yeah?"
   nextDialogue: {fileID: 11400000, guid: 02d29191f9357094ab333c443935bff4, type: 2}

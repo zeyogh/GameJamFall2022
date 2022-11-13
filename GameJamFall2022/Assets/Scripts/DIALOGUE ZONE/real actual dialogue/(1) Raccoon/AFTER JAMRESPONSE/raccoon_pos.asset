@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 752715cfdbe9bda41a5324ae4cf20f62, type: 2}
   sentences:
-  - "Not bad, kid. I knew I wasn\u2019t mistaken in hiring you!"
+  - "Not bad, kid. I knew I wasn\u2019t mistaken when I took you in!"
   nextDialogue: {fileID: 11400000, guid: efea06ab96e92024d879c0f8921db7af, type: 2}

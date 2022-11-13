@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
-  m_Name: crow_b_8
+  m_Name: coyote_b_9
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 9058bf22fbc6a71468f94b1dcc660175, type: 2}
+  character: {fileID: 11400000, guid: ac7c71ccd2199484bbc9c736c3872847, type: 2}
   sentences:
-  - Sir, please order.
-  nextDialogue: {fileID: 11400000, guid: 357a8fd48640f914b9c528f0770362af, type: 2}
+  - "So don\u2019t mess this up, yeah? Give a coyote a break."
+  nextDialogue: {fileID: 0}

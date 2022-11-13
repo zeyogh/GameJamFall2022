@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: e3e3ac232a7be2f4dbe63ceb3fd844b9, type: 2}
   sentences:
-  - Well wouldya lookit that! That old raccoon got some hired help!
+  - Well wouldya look at that! That old raccoon got some hired help!
   nextDialogue: {fileID: 11400000, guid: 69a7803a1ea29744a9954ec08894150a, type: 2}

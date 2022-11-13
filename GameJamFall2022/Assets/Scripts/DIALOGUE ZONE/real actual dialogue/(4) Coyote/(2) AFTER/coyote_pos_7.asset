@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: ac7c71ccd2199484bbc9c736c3872847, type: 2}
   sentences:
-  - "Eh, might as well not keep it a secret. The mutations\u2019ve been biting at
-    me for a while now. Today or tomorrow, I don\u2019t know, but I don\u2019t have
-    a lot of days left."
+  - "Eh, might as well be open about it. Not like it\u2019s an uncommon story these
+    days. This arm is just the beginning\u2026 the mutations\u2019ve been biting
+    at me for a while now. Today or tomorrow, I don\u2019t know, but I don\u2019t
+    have a lot of days left."
   - "I always liked this place though. For more reasons than one. So I\u2019m glad
     I could make it here one last time."
   - "Send my regards to your boss. You\u2019re not half-bad, kid."

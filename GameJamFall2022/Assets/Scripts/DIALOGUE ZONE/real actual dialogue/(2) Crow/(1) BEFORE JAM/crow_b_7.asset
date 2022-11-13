@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: e3e3ac232a7be2f4dbe63ceb3fd844b9, type: 2}
   sentences:
+  - What?
   - "Not that I\u2019m saying I\u2019m jealous or anything, definitely not. I\u2019m
     a successful business owner myself, y\u2019know. I run the saloon north of here."
   - "Haven\u2019t seen you around these parts, you should swing by. Where\u2019d
