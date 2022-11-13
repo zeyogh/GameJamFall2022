@@ -512,7 +512,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &801940485
 GameObject:
@@ -1036,7 +1036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b818631adae9b04c84274da1aaa9747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 5c109f2ba5a57cd47835412e659006b7, type: 2}
+  dialogue: {fileID: 0}
 --- !u!1 &1553473482
 GameObject:
   m_ObjectHideFlags: 0

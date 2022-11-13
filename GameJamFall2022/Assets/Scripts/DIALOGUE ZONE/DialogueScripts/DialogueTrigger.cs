@@ -15,6 +15,8 @@ public class DialogueTrigger : MonoBehaviour
     }
 
 
+
+
     public void TriggerJamResponse(CharacterSO character)
     {
 
