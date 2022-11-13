@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public GameObject dialoguePanel;
+    public Image characterSprite;
     public Button continueButton;
     public Button dialogueButton;
     public Button loadNextScene;
@@ -44,6 +45,12 @@ public class DialogueManager : MonoBehaviour
         //  Debug.Log("Starting conversation with " + dialogue.NPCName);
 
         currDialogue = dialogue;
+        if (dialogue.character.NPCSprite != null)
+        {
+            characterSprite.sprite = dialogue.character.NPCSprite;
+            characterSprite.gameObject.SetActive(true);
+        }
+        
         dialoguePanel.SetActive(true);
         continueButton.gameObject.SetActive(true);
         sentences.Clear();
@@ -75,6 +82,7 @@ public class DialogueManager : MonoBehaviour
         if (currDialogue.nextDialogue == null)
         {
             dialoguePanel.SetActive(false);
+            characterSprite.gameObject.SetActive(false);
             continueButton.gameObject.SetActive(false);
             loadNextScene.gameObject.SetActive(true);
         }

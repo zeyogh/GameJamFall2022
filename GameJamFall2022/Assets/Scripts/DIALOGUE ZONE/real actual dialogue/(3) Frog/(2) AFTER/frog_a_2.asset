@@ -15,4 +15,4 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: 9058bf22fbc6a71468f94b1dcc660175, type: 2}
   sentences:
   - "(She looked like a tough customer, but ended up leaving without a fuss\u2026)"
-  nextDialogue: {fileID: 11400000, guid: 38a08dab7289dbb4fa97867b6bdd3ee6, type: 2}
+  nextDialogue: {fileID: 11400000, guid: 2c16d5e4ac739534d93a12ec8ae4bd09, type: 2}
