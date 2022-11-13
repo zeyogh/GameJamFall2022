@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 9ef065591779bfe43b11a7cedc978f6f, type: 2}
   sentences:
-  - 'Frog: Oh no. It would be a shame if this entire place spontaneously caught on
-    fire. Oh, the humanity.'
+  - Oh no. It would be a shame if this entire place spontaneously caught on fire.
+    Oh, the humanity.
   nextDialogue: {fileID: 11400000, guid: 9a7fa6f7decc972478fe9a8871168ace, type: 2}

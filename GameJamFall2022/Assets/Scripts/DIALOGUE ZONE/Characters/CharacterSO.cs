@@ -11,6 +11,7 @@ public class CharacterSO : ScriptableObject
     public Sprite NPCSprite;
     public Dialogue positiveResponse;
     public Dialogue negativeResponse;
+    public bool canMurderYou;
     
     public Dialogue GetJamResponseDialogue(bool jamMatches)
     {

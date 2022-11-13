@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: ac7c71ccd2199484bbc9c736c3872847, type: 2}
   sentences:
-  - "Coyote: Well, well\u2026"
+  - "Well, well\u2026"
   nextDialogue: {fileID: 11400000, guid: b3ee6f1f80f1d9249b3527d92a054150, type: 2}

@@ -6,14 +6,18 @@ using UnityEngine.SceneManagement;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+    private DialogueManager manager;
 
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        manager = FindObjectOfType<DialogueManager>();
+        manager.StartDialogue(dialogue);
     }
+
 
     public void TriggerJamResponse(CharacterSO character)
     {
+
         bool jamMatches = FindObjectOfType<JamValues>().equals(character.jamPreference);
         
         if (jamMatches)
@@ -24,11 +28,15 @@ public class DialogueTrigger : MonoBehaviour
             dialogue = character.negativeResponse;
         }
 
-        TriggerDialogue();
-
-        if (!jamMatches && character.name == "Coyote")
+        if (!jamMatches && character.name.Equals("Coyote"))
         {
+            Debug.Log("You died");
             SceneManager.LoadScene("CoyoteGameOver");
+        } else
+        {
+            TriggerDialogue();
         }
+
+        
     }
 }

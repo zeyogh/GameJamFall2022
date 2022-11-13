@@ -19,4 +19,4 @@ MonoBehaviour:
   - "But right now I just see a fish, so I\u2019ll have to make do with a day\u2019s
     meal."
   - I told you not to mess this up.
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: 9e51b3957ea32754fa9fa5eed328f85d, type: 2}

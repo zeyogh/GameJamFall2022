@@ -848,11 +848,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1500749540}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
+        m_MethodName: TriggerJamResponse
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: ac7c71ccd2199484bbc9c736c3872847, type: 2}
+          m_ObjectArgumentAssemblyTypeName: CharacterSO, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b818631adae9b04c84274da1aaa9747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 710bd982b22bce046b4daf38b625673d, type: 2}
+  dialogue: {fileID: 11400000, guid: 5c109f2ba5a57cd47835412e659006b7, type: 2}
 --- !u!1 &1553473482
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e9c985da7255144fb8e64ac39c40810, type: 3}
   m_Name: coyote_pos_7
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
+  character: {fileID: 11400000, guid: ac7c71ccd2199484bbc9c736c3872847, type: 2}
   sentences:
   - "Eh, might as well not keep it a secret. The mutations\u2019ve been biting at
     me for a while now. Today or tomorrow, I don\u2019t know, but I don\u2019t have
