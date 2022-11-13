@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-    private DialogueManager manager;
+    public CharacterSO character;
+    public DialogueManager manager;
+
 
     public void TriggerDialogue()
     {
@@ -15,12 +19,11 @@ public class DialogueTrigger : MonoBehaviour
     }
 
 
-
-
-    public void TriggerJamResponse(CharacterSO character)
+    public void TriggerJamResponse()
     {
 
-        bool jamMatches = FindObjectOfType<JamValues>().equals(character.jamPreference);
+        // bool jamMatches = FindObjectOfType<JamValues>().equals(character.jamPreference);
+        bool jamMatches = true;
         
         if (jamMatches)
         {
