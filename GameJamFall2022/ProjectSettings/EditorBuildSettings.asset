@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Kitchen.unity
     guid: 8ce34e502841e5f46b8cca85e407f128
@@ -30,6 +30,18 @@ EditorBuildSettings:
     path: Assets/Scenes/RaccoonCounter.unity
     guid: f7df6a584e4ad8d459e847d767d2e969
   - enabled: 1
+    path: Assets/Scenes/CrowCounter.unity
+    guid: 1b9945eb58011b949b25b655b160c05a
+  - enabled: 1
+    path: Assets/Scenes/FrogCounter.unity
+    guid: 00a579aeaf2d59a47bf6e3062080bf29
+  - enabled: 1
+    path: Assets/Scenes/CoyoteCounter.unity
+    guid: 95fb8f2560bc25c48bf8f4214f9cd2ac
+  - enabled: 1
     path: Assets/Scenes/CoyoteGameOver.unity
     guid: 715960f09cd8a3d41b9b77506e1bf0a5
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 1839c944afcbbd041930f3cba5ca1868
   m_configObjects: {}
