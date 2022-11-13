@@ -313,9 +313,9 @@ MonoBehaviour:
   appleWhole: {fileID: 21300000, guid: 29935b1464220b4488bb8246df45cdc2, type: 3}
   appleCut: {fileID: 21300000, guid: fcf057be82e33694ca1fb8ed2393ef23, type: 3}
   appleCrushed: {fileID: 21300000, guid: 18096e10ba51cac44a01b4667cec4a2e, type: 3}
-  strawberryWhole: {fileID: 0}
-  strawberryCut: {fileID: 0}
-  strawberryCrushed: {fileID: 0}
+  strawberryWhole: {fileID: 21300000, guid: 7f68f0135eeb4884fbcf2b9c932333ae, type: 3}
+  strawberryCut: {fileID: 21300000, guid: a22d5efd09544c2438ad5affcb3fe415, type: 3}
+  strawberryCrushed: {fileID: 21300000, guid: 36e886e38cb5ad34b9246a74ec978142, type: 3}
   blueberryWhole: {fileID: 21300000, guid: 4cd68be5998b70440882c83838b60c8e, type: 3}
   blueberryCut: {fileID: 21300000, guid: f3c6e48e46594a447a8fa4d40131fedc, type: 3}
   blueberryCrushed: {fileID: 21300000, guid: 368a1530ee23dec43991f00820b7690b, type: 3}
