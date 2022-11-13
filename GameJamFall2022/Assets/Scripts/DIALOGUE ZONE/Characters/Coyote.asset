@@ -17,3 +17,4 @@ MonoBehaviour:
   NPCSprite: {fileID: 21300000, guid: 9bffac86161c02e4085f82521c75afa4, type: 3}
   positiveResponse: {fileID: 11400000, guid: d4fea48f73131644296598a2200ccab9, type: 2}
   negativeResponse: {fileID: 11400000, guid: 5c109f2ba5a57cd47835412e659006b7, type: 2}
+  voice: {fileID: 8300000, guid: 968050a13639e9948867fa455d1a8e68, type: 3}

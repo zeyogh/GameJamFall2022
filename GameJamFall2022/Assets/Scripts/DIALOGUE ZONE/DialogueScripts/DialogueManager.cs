@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     public Button continueButton;
     public Button dialogueButton;
     public Button loadNextScene;
+    public AudioSource characterVoice;
 
     public Dialogue[] startConversation;
     public CharacterSO[] characters;
@@ -75,6 +76,13 @@ public class DialogueManager : MonoBehaviour
             characterSprite.gameObject.SetActive(false);
         }
         
+
+        if (dialogue.character.voice != null)
+        {
+            characterVoice.clip = dialogue.character.voice;
+            characterVoice.Play();
+        }
+
         dialoguePanel.SetActive(true);
         continueButton.gameObject.SetActive(true);
         sentences.Clear();

@@ -1121,6 +1121,7 @@ MonoBehaviour:
   continueButton: {fileID: 1233095965}
   dialogueButton: {fileID: 1942386030}
   loadNextScene: {fileID: 726579738}
+  characterVoice: {fileID: 0}
   startConversation:
   - {fileID: 11400000, guid: 5721c90a121da3e4c96a8261d8f9fa60, type: 2}
   - {fileID: 11400000, guid: f7f2e0bba4405e0499bfe39caf56c646, type: 2}
