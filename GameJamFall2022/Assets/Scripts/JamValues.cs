@@ -73,6 +73,10 @@ public class JamValues : MonoBehaviour
         {
             speaker = "frog";
         }
+        else if (scene.Equals("FrogEndCounter"))
+        {
+            speaker = "coyote";
+        }
         else if (scene.Equals("CoyoteCounter")) {
             speaker = "coyote";
         }

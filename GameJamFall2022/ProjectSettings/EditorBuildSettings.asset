@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 1839c944afcbbd041930f3cba5ca1868
+  - enabled: 1
+    path: Assets/Scenes/FrogEndCounter.unity
+    guid: 6fb617a0deeff76429551803e8f7aa1d
   m_configObjects: {}

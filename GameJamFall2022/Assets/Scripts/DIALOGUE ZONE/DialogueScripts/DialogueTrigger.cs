@@ -11,6 +11,8 @@ public class DialogueTrigger : MonoBehaviour
     public CharacterSO character;
     public DialogueManager manager;
 
+    private bool coyoteCounterTrigger = true;
+
 
     public void TriggerDialogue()
     {
@@ -42,5 +44,13 @@ public class DialogueTrigger : MonoBehaviour
         }
 
         
+    }
+
+    private void Start()
+    {
+        if (dialogue != null & SceneManager.GetActiveScene().name.Equals("CoyoteCounter"))
+        {
+            TriggerDialogue();
+        }
     }
 }
