@@ -10,7 +10,7 @@ public class JamValues : MonoBehaviour
     /*
      * [Fruit, Cut, Sugar, Mix]
      */
-    private static int[] jamValues = new int[3] { -1, 0, 0 };
+    private static int[] jamValues = new int[3] { 0, 0, 0 };
 
     private static string speaker = "raccoon";
 
@@ -114,6 +114,11 @@ public class JamValues : MonoBehaviour
     public int getSugar()
     {
         return jamValues[2];
+    }
+
+    public int getType()
+    {
+        return jamValues[0];
     }
 
     public void cut()

@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 7592684}
   - component: {fileID: 7592683}
   - component: {fileID: 7592686}
+  - component: {fileID: 7592687}
   m_Layer: 5
   m_Name: Cut
   m_TagString: Untagged
@@ -270,6 +271,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b15f3e6a750f95347ad4c696a41ee801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7592687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7592681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f627d4d70b683e2489097a213024d02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jamValues: {fileID: 7592681}
+  image: {fileID: 405694016}
+  appleWhole: {fileID: 21300000, guid: 29935b1464220b4488bb8246df45cdc2, type: 3}
+  appleCut: {fileID: 21300000, guid: fcf057be82e33694ca1fb8ed2393ef23, type: 3}
+  appleCrushed: {fileID: 21300000, guid: 18096e10ba51cac44a01b4667cec4a2e, type: 3}
+  strawberryWhole: {fileID: 0}
+  strawberryCut: {fileID: 0}
+  strawberryCrushed: {fileID: 0}
+  blueberryWhole: {fileID: 21300000, guid: 4cd68be5998b70440882c83838b60c8e, type: 3}
+  blueberryCut: {fileID: 21300000, guid: f3c6e48e46594a447a8fa4d40131fedc, type: 3}
+  blueberryCrushed: {fileID: 21300000, guid: 368a1530ee23dec43991f00820b7690b, type: 3}
+  meatWhole: {fileID: 21300000, guid: e44507f9e0f68754bafcc5fc8b8d0c98, type: 3}
+  meatCut: {fileID: 21300000, guid: c1fb7135f8820b4439b08bbdcf73ec1b, type: 3}
+  meatCrushed: {fileID: 21300000, guid: 36e886e38cb5ad34b9246a74ec978142, type: 3}
 --- !u!1001 &293026358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -331,6 +358,82 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e998dc6dcc9e194cb94ba22868c3f2c, type: 3}
+--- !u!1 &405694014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 405694015}
+  - component: {fileID: 405694017}
+  - component: {fileID: 405694016}
+  m_Layer: 5
+  m_Name: Food
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &405694015
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405694014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1420064623}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 406, y: -185}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &405694016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405694014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &405694017
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405694014}
+  m_CullTransparentMesh: 1
 --- !u!1 &614605445
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,7 +593,7 @@ GameObject:
   - component: {fileID: 648845310}
   - component: {fileID: 648845309}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1043,6 +1146,7 @@ RectTransform:
   - {fileID: 7592682}
   - {fileID: 614605446}
   - {fileID: 2019415649}
+  - {fileID: 405694015}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
