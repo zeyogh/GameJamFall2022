@@ -105,9 +105,6 @@ public class DialogueManager : MonoBehaviour
         {
             StartDialogue(currDialogue.nextDialogue);
         }
-
-        
-
     }
 
     private void Update()
