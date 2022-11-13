@@ -20,4 +20,5 @@ public class Dialogue : ScriptableObject
     public Dialogue nextDialogue;
 
 
+
 }

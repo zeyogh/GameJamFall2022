@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Unity.UI;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -10,7 +10,14 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public GameObject dialoguePanel;
-    public GameObject continueButton;
+    public Button continueButton;
+    public Button dialogueButton;
+
+    public Dialogue[] startConversation;
+    public CharacterSO[] characters;
+    public Queue<Dialogue> startConvos;
+
+
     private Queue<string> sentences;
     private Dialogue currDialogue;
 
@@ -20,12 +27,14 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
+
     public void StartDialogue(Dialogue dialogue)
     {
         //  Debug.Log("Starting conversation with " + dialogue.NPCName);
+
         currDialogue = dialogue;
         dialoguePanel.SetActive(true);
-        continueButton.SetActive(true);
+        continueButton.gameObject.SetActive(true);
         sentences.Clear();
         nameText.text = currDialogue.character.NPCName;
 
@@ -55,7 +64,7 @@ public class DialogueManager : MonoBehaviour
         if (currDialogue.nextDialogue == null)
         {
             dialoguePanel.SetActive(false);
-            continueButton.SetActive(false);
+            continueButton.gameObject.SetActive(false);
         }
         else
         {
