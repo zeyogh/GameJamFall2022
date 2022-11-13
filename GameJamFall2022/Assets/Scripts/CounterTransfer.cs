@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CounterTransfer : MonoBehaviour
 {
-    private static string counter = "crow";
+    private static string counter = "coyote";
 
     public void activate()
     {
@@ -23,7 +23,7 @@ public class CounterTransfer : MonoBehaviour
 
         else if (speaker.Equals("frog"))
         {
-            counter = "coyote";
+            counter = "frogend";
         }
 
         else
@@ -77,6 +77,11 @@ public class CounterTransfer : MonoBehaviour
         if (animal.Equals("end"))
         {
             SceneManager.LoadScene("End");
+        }
+
+        if (animal.Equals("frogend"))
+        {
+            SceneManager.LoadScene("FrogEndCounter");
         }
 
     }

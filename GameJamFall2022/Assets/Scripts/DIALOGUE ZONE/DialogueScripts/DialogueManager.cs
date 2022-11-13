@@ -25,12 +25,21 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     private Dialogue currDialogue;
 
+
     private static int[] coyoteJamPreference = { 3, 0, 1 };
 
 
-    private void Start()
+    private void Awake()
     {
         sentences = new Queue<string>();
+    }
+
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name.Equals("End") && !FindObjectOfType<JamValues>().equals(coyoteJamPreference))
+        {
+            SceneManager.LoadScene("CoyoteGameOver");
+        }
     }
 
 
@@ -69,8 +78,11 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
         continueButton.gameObject.SetActive(true);
         sentences.Clear();
+        
+        
         nameText.text = currDialogue.character.NPCName;
 
+        
         foreach (string sentence in currDialogue.sentences)
         {
             sentences.Enqueue(sentence);
@@ -96,10 +108,19 @@ public class DialogueManager : MonoBehaviour
     {
         if (currDialogue.nextDialogue == null)
         {
+            
+
+            if (!SceneManager.GetActiveScene().name.Equals("FrogEndCounter"))
+                loadNextScene.gameObject.SetActive(true);
+            else
+            {
+                SceneManager.LoadScene("CoyoteCounter");
+            }
+
             dialoguePanel.SetActive(false);
-         //   characterSprite.gameObject.SetActive(false);
+            //   characterSprite.gameObject.SetActive(false);
             continueButton.gameObject.SetActive(false);
-            loadNextScene.gameObject.SetActive(true);
+
         }
         else
         {
@@ -109,9 +130,6 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name.Equals("End") && !FindObjectOfType<JamValues>().equals(coyoteJamPreference))
-        {
-            SceneManager.LoadScene("CoyoteGameOver");
-        }
+        
     }
 }
