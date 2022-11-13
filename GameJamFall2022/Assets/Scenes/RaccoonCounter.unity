@@ -888,6 +888,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894549533}
   m_CullTransparentMesh: 1
+--- !u!114 &929399991 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6147799039773430190, guid: 718a11845e19cd44fa7ad0382df8a35a, type: 3}
+  m_PrefabInstance: {fileID: 1159558692}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15f3e6a750f95347ad4c696a41ee801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1001157426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1446,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1500749540}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 929399991}
+        m_TargetAssemblyTypeName: JamValues, Assembly-CSharp
+        m_MethodName: printJam
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

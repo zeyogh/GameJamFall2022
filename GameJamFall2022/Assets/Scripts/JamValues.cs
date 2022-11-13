@@ -10,7 +10,7 @@ public class JamValues : MonoBehaviour
     /*
      * [Fruit, Cut, Sugar, Mix]
      */
-    private static int[] jamValues = new int[3] { -1, 0, -1 };
+    private static int[] jamValues = new int[3] { -1, 0, 0 };
 
     private static string speaker = "raccoon";
 
@@ -84,11 +84,13 @@ public class JamValues : MonoBehaviour
 
         if (speaker.Equals("raccoon"))
         {
+            Debug.Log("raccoon maaaaan");
             return raccoonTest();
         }
 
         if (jamValues[0] != customerPreference[0] || jamValues[2] != customerPreference[2])
         {
+            Debug.Log("1 or 3 incorrect!");
             return false;
         }
 
@@ -96,24 +98,37 @@ public class JamValues : MonoBehaviour
         {
             return true;
         }
+        else
+        {
+            Debug.Log("first didn't work");
+        }
 
         if (customerPreference[1] == 2 && (jamValues[1] == 2 || jamValues[1] == 3))
         {
             return true;
+        }
+        else
+        {
+            Debug.Log("second didn't work");
         }
 
         if (customerPreference[1] == 4 && jamValues[1] >= 4)
         {
             return true;
         }
+        else
+        {
+            Debug.Log("third didn't work");
+        }
 
+        Debug.Log("fell here!");
         return false;
     }
 
     public void refresh()
     {
         jamValues[1] = 0;
-        jamValues[2] = -1;
+        jamValues[2] = 0;
     }    
     
     private bool raccoonTest()
