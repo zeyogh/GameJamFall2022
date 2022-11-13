@@ -8,6 +8,11 @@ public class OverrideAudio : MonoBehaviour
     private void Awake()
     {
         AudioSource source = FindObjectOfType<AudioSource>();
+       /* foreach(AudioSource track in source)
+        {
+            Destroy(track);
+        }*/
+        
         Destroy(source);
     }
 }
