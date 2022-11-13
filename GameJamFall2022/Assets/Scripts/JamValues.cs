@@ -130,6 +130,11 @@ public class JamValues : MonoBehaviour
         jamValues[1] = 0;
         jamValues[2] = 0;
     }    
+
+    public string getSpeaker()
+    {
+        return speaker;
+    }
     
     private bool raccoonTest()
     {
