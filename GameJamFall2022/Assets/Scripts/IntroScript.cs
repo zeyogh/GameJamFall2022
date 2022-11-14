@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlaySlideshow : MonoBehaviour
+public class IntroScript : MonoBehaviour
 {
     [SerializeField] Image currentSlide;
-    [SerializeField] bool start;
 
     [SerializeField] Sprite slide0;
     [SerializeField] Sprite slide1;
@@ -16,26 +15,21 @@ public class PlaySlideshow : MonoBehaviour
     [SerializeField] Sprite slide4;
     [SerializeField] Sprite slide5;
     [SerializeField] Sprite slide6;
+    [SerializeField] Sprite slide7;
+    [SerializeField] Sprite slide8;
+    [SerializeField] Sprite slide9;
 
-    [SerializeField] GameObject text;
+    [SerializeField] Sprite secondFrame;
 
     private Sprite[] sprites;
-    int index = 1;
+
+    private float nextActionTime = 0.0f;
+
+    private int index = 1;
 
     private void Start()
     {
-
-        if (!start)
-        {
-            sprites = new Sprite[4];
-            sprites[0] = slide0;
-            sprites[1] = slide1;
-            sprites[2] = slide2;
-            sprites[3] = slide3;
-        }
-        else
-        {
-            sprites = new Sprite[7];
+            sprites = new Sprite[10];
             sprites[0] = slide0;
             sprites[1] = slide1;
             sprites[2] = slide2;
@@ -43,21 +37,41 @@ public class PlaySlideshow : MonoBehaviour
             sprites[4] = slide4;
             sprites[5] = slide5;
             sprites[6] = slide6;
-        }
+            sprites[7] = slide7;
+            sprites[8] = slide8;
+            sprites[9] = slide9;
+
 
     }
 
     void Update()
     {
+        if (index == 6)
+        {
+            if (Time.time > nextActionTime)
+            {
+                nextActionTime += Time.time + .5f;
+                if (currentSlide.sprite == slide6)
+                {
+                    currentSlide.sprite = secondFrame;
+                    Debug.Log("next: " + nextActionTime + " Time.time: " + Time.time);
+                }
+                else
+                {
+                    currentSlide.sprite = slide6;
+                }
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.Space)) //pressed
         {
 
-            if (!start && index == 4)
+            if (index == 10)
             {
-                SceneManager.LoadScene("Credits");
+                SceneManager.LoadScene("YearsLater");
             }
             else
-            { 
+            {
                 flipToNext();
             }
         }
@@ -66,11 +80,8 @@ public class PlaySlideshow : MonoBehaviour
 
     public void flipToNext()
     {
+        Debug.Log(index);
         currentSlide.sprite = sprites[index];
-        if (!start && index == 3)
-        {
-            text.SetActive(true);
-        }
         index++;
     }
 

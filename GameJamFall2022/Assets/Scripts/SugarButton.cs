@@ -7,6 +7,10 @@ using UnityEngine.EventSystems;
 public class SugarButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] Button pourButton;
+    [SerializeField] GameObject sugarbag;
+    [SerializeField] Sprite original;
+    [SerializeField] Sprite pouring;
+    [SerializeField] GameObject sugarFlood;
 
     private float pour = 0f;
     private float startTime = 0f;
@@ -18,11 +22,15 @@ public class SugarButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         startTime = Time.time;
+        sugarbag.GetComponent<Image>().sprite = pouring;
+        sugarFlood.SetActive(true);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         pour += Time.time - startTime;
+        sugarbag.GetComponent<Image>().sprite = original;
+        sugarFlood.SetActive(false);
     }
 
     public void addPour()
