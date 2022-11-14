@@ -221,6 +221,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 224499370}
+        m_TargetAssemblyTypeName: SwitchSong, Assembly-CSharp
+        m_MethodName: changeSong
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 224499369}
         m_TargetAssemblyTypeName: CounterTransfer, Assembly-CSharp
         m_MethodName: activate
@@ -295,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7989b6b0ba37e3c4ea458d371bb635dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSong: {fileID: 0}
+  nextSong: {fileID: 8300000, guid: 8289cbf82329e85408a59b46d4d6e713, type: 3}
   currAudioSource: {fileID: 0}
 --- !u!1 &731873125
 GameObject:
