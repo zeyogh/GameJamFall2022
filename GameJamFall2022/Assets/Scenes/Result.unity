@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 224499368}
   - component: {fileID: 224499367}
   - component: {fileID: 224499366}
+  - component: {fileID: 224499370}
   - component: {fileID: 224499369}
   m_Layer: 5
   m_Name: Counter
@@ -208,6 +209,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 224499370}
+        m_TargetAssemblyTypeName: SwitchSong, Assembly-CSharp
+        m_MethodName: endSong
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 224499369}
         m_TargetAssemblyTypeName: CounterTransfer, Assembly-CSharp
         m_MethodName: activate
@@ -270,6 +283,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022e3504a51c98047991278272df3b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &224499370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224499363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7989b6b0ba37e3c4ea458d371bb635dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSong: {fileID: 0}
+  currAudioSource: {fileID: 0}
 --- !u!1 &731873125
 GameObject:
   m_ObjectHideFlags: 0
