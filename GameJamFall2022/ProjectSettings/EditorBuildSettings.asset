@@ -7,7 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 2fc9479f8d2bb7341bdac0b1bd567b3f
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 2a8c600742e7fbc4da47313e3c2b0398
   - enabled: 1
     path: Assets/Scenes/Kitchen.unity
     guid: 8ce34e502841e5f46b8cca85e407f128
@@ -50,12 +56,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndingCutscenes.unity
     guid: e34a60daf0ecdf941946d2fe1563eb57
-  - enabled: 1
-    path: Assets/Scenes/Start.unity
-    guid: 2fc9479f8d2bb7341bdac0b1bd567b3f
-  - enabled: 1
-    path: Assets/Scenes/Intro.unity
-    guid: 2a8c600742e7fbc4da47313e3c2b0398
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: a5dafa9438b15ed4a9253dc9262b1a8e
